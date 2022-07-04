@@ -3,6 +3,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {userSelector} from "../redux/reducers/userReducer/selectors";
 import {useNavigate} from "react-router-dom";
 import {loginInitiate, registerInitiate} from "../redux/reducers/actions";
+import '../Style/Login.css'
+
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -28,8 +30,10 @@ const Login = () => {
         <div>
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" onChange={(event) => setEmail(event.target.value)}/>
-                <input type="text" onChange={(event) =>setPassword(event.target.value)}/>
+                <label htmlFor={'email'}>Email</label>
+                <input type="text" name={'email'} id={'email'} onChange={(event) => setEmail(event.target.value)}/>
+                <label htmlFor={'password'}>Password</label>
+                <input type="password" name={'password'} id={'password'} onChange={(event) =>setPassword(event.target.value)}/>
                 <button type={"submit"}>Sign In</button>
             </form>
         </div>

@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    height: 75px;
+    align-items: center;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.add_cont,
+.page,
+.log_system,
+.home_page{
+    color: black;
+}
+
+
+.header a{
+    text-decoration: none;
+    cursor: pointer;
+    display:inline-block;
+    padding:10px;
+}
+
+.logo{
+    color: black;
+}
+
+.header p:hover,
+.header p:focus{
+    opacity: 0.7;
+    cursor: pointer;
+    background-color:skyblue;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1px;
+}
+

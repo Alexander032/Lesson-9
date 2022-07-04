@@ -1,0 +1,5 @@
+.register_app{
+    display: flex;
+    flex-direction: column;
+}
+

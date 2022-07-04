@@ -3,6 +3,7 @@ import {NavLink, useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {userSelector} from "../redux/reducers/userReducer/selectors";
 import {registerInitiate} from "../redux/reducers/actions";
+import '../Style/register.css'
 
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -28,12 +29,7 @@ const Register = () => {
     }
 
     return (
-        <div>
-            <header style={{width: '5%', height: '70', background:'indianred'}}>
-                <NavLink  style={{fontSize:'30', textDecoration:'none',color:'white'}} to={'/Login'}>
-                    Войти
-                </NavLink>
-            </header>
+        <div className='register_app'>
                     <h2 style={{marginTop:'20px'}}>Register</h2>
                 <form onSubmit={handleSubmit}>
                     <input placeholder={'Имя'} type="text" value={displayName} onChange={(event) =>setDisplayName(event.target.value)}/>
